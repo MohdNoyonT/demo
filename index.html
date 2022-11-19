@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<div class="controls">
+	<button type="button" data-filter="all">All</button>
+		<button type="button" data-filter=".category-a">Category A</button>
+		<button type="button" data-filter=".category-b">Category B</button>
+		<button type="button" data-filter=".category-c">Category C</button>
+</div>
+		<div class="container">
+			<div class="mix category-a" data-order="1">About Me</div>
+			<div class="mix category-b" data-order="2">Skills</div>
+			<div class="mix category-b category-c" data-order="3">About Trainer</div>
+			<div class="mix category-a category-d" data-order="4">Where I Get Trained</div>
+		</div>
+	</div>
+<script src="mixitup/mixitup.min.js"></script>
+<script>
+	var mixer = mixitup('.container');
+</script>
+</body>
+</html>
